@@ -5,7 +5,7 @@ from telebot import types
 from time import sleep
 
 driver = webdriver.Firefox()
-bot = telebot.TeleBot(token)
+bot = telebot.TeleBot(config('TOKEN'))
 
 @bot.message_handler(commands=['start', 'старт'])
 def start(message):
